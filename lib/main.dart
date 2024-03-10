@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 void main() {
   runApp(const BusinessCardApp());
@@ -13,7 +11,7 @@ class BusinessCardApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: const Color(0xFFADCEED),
+        backgroundColor: const Color(0xFF222222),
         appBar: AppBar(
           backgroundColor: Colors.blueGrey,
           title: const Center(
@@ -22,28 +20,38 @@ class BusinessCardApp extends StatelessWidget {
               style: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
-                  color: Colors.black),
+                  color: Colors.white),
             ),
           ),
         ),
-        body: const Column(
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Center(
+            const Center(
               child: CircleAvatar(
                 backgroundColor: Colors.white,
-                radius: 75,
+                radius: 85,
                 child: CircleAvatar(
-                  radius: 74,
+                  radius: 84,
                   backgroundImage: AssetImage('assets/images/logo.jpg'),
                 ),
               ),
             ),
-
-            // Center(
-            //     child: CircleAvatar(
-            //   radius: 100,
-            //   child: Image.asset('assets/images/logo.jpg'),
-            // )),
+            const Text(
+              'Osama Lasheen',
+              style: TextStyle(
+                fontFamily: 'Pacifico',
+                fontSize: 32,
+                color: Colors.white,
+              ),
+            ),
+            Text(
+              'Flutter Developer',
+              style: TextStyle(fontSize: 28, color: Colors.grey[800]),
+            ),
+            const Divider(
+              thickness: 0.5,
+            ),
           ],
         ),
       ),
