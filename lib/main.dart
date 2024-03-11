@@ -78,7 +78,7 @@ class BusinessCardApp extends StatelessWidget {
                       flex: 1,
                     ),
                     Text(
-                      '(+20) 1012234455',
+                      '(+20) 1011111111',
                       style: TextStyle(
                         fontSize: 28,
                         color: Color(0xFF222222),
@@ -114,7 +114,7 @@ class BusinessCardApp extends StatelessWidget {
                       flex: 1,
                     ),
                     Text(
-                      'ABC@gmail.com',
+                      'osamalasheeno@gmail.com',
                       style: TextStyle(
                         fontSize: 28,
                         color: Color(0xFF222222),
