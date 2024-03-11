@@ -56,69 +56,39 @@ class BusinessCardApp extends StatelessWidget {
               endIndent: 60,
               height: 10,
             ),
-            Padding(
-              padding:
-                  const EdgeInsets.only(right: 16.0, left: 16.0, bottom: 16.0),
-              child: Container(
-                height: 65,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(8),
-                  color: Colors.white,
+            const Card(
+              color: Colors.white,
+              margin: EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+              child: ListTile(
+                leading: Icon(
+                  Icons.phone,
+                  size: 32,
+                  color: Color(0xFF222222),
                 ),
-                child: const Row(
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.only(left: 16.0),
-                      child: Icon(
-                        Icons.phone,
-                        size: 32,
-                        color: Color(0xFF222222),
-                      ),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 10.0),
-                      child: Text(
-                        '(+20) 1011111111',
-                        style: TextStyle(
-                          fontSize: 22,
-                          color: Color(0xFF222222),
-                        ),
-                      ),
-                    ),
-                  ],
+                title: Text(
+                  '(+20) 1011111111',
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: Color(0xFF222222),
+                  ),
                 ),
               ),
             ),
-            Padding(
-              padding:
-                  const EdgeInsets.only(right: 16.0, left: 16.0, bottom: 16.0),
-              child: Container(
-                height: 65,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(8),
-                  color: Colors.white,
+            const Card(
+              color: Colors.white,
+              margin: EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+              child: ListTile(
+                leading: Icon(
+                  Icons.mail,
+                  size: 32,
+                  color: Color(0xFF222222),
                 ),
-                child: const Row(
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.only(left: 16.0),
-                      child: Icon(
-                        Icons.mail,
-                        size: 32,
-                        color: Color(0xFF222222),
-                      ),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 10.0),
-                      child: Text(
-                        'osamalasheeno@gmail.com',
-                        style: TextStyle(
-                          fontSize: 22,
-                          color: Color(0xFF222222),
-                        ),
-                      ),
-                    ),
-                  ],
+                title: Text(
+                  'osamalasheeno@gmail.com',
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: Color(0xFF222222),
+                  ),
                 ),
               ),
             ),
