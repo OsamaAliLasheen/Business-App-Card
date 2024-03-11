@@ -30,7 +30,7 @@ class BusinessCardApp extends StatelessWidget {
             const Center(
               child: CircleAvatar(
                 backgroundColor: Colors.white,
-                radius: 85,
+                radius: 86,
                 child: CircleAvatar(
                   radius: 84,
                   backgroundImage: AssetImage('assets/images/logo.jpg'),
@@ -49,8 +49,83 @@ class BusinessCardApp extends StatelessWidget {
               'Flutter Developer',
               style: TextStyle(fontSize: 28, color: Colors.grey[800]),
             ),
-            const Divider(
-              thickness: 0.5,
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 50),
+              child: Divider(
+                thickness: 0.5,
+              ),
+            ),
+            Padding(
+              padding:
+                  const EdgeInsets.only(right: 16.0, left: 16.0, bottom: 16.0),
+              child: Container(
+                height: 65,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(8),
+                  color: Colors.white,
+                ),
+                child: const Row(
+                  children: [
+                    Spacer(
+                      flex: 1,
+                    ),
+                    Icon(
+                      Icons.phone,
+                      size: 32,
+                      color: Color(0xFF222222),
+                    ),
+                    Spacer(
+                      flex: 1,
+                    ),
+                    Text(
+                      '(+20) 1012234455',
+                      style: TextStyle(
+                        fontSize: 28,
+                        color: Color(0xFF222222),
+                      ),
+                    ),
+                    Spacer(
+                      flex: 2,
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            Padding(
+              padding:
+                  const EdgeInsets.only(right: 16.0, left: 16.0, bottom: 16.0),
+              child: Container(
+                height: 65,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(8),
+                  color: Colors.white,
+                ),
+                child: const Row(
+                  children: [
+                    Spacer(
+                      flex: 1,
+                    ),
+                    Icon(
+                      Icons.mail,
+                      size: 32,
+                      color: Color(0xFF222222),
+                    ),
+                    Spacer(
+                      flex: 1,
+                    ),
+                    Text(
+                      'ABC@gmail.com',
+                      style: TextStyle(
+                        fontSize: 28,
+                        color: Color(0xFF222222),
+                      ),
+                    ),
+                    Spacer(
+                      flex: 2,
+                    ),
+                  ],
+                ),
+              ),
             ),
           ],
         ),
