@@ -49,11 +49,12 @@ class BusinessCardApp extends StatelessWidget {
               'Flutter Developer',
               style: TextStyle(fontSize: 28, color: Colors.grey[800]),
             ),
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 50),
-              child: Divider(
-                thickness: 0.5,
-              ),
+            Divider(
+              thickness: 2,
+              color: Colors.grey[800],
+              indent: 60,
+              endIndent: 60,
+              height: 10,
             ),
             Padding(
               padding:
@@ -66,26 +67,23 @@ class BusinessCardApp extends StatelessWidget {
                 ),
                 child: const Row(
                   children: [
-                    Spacer(
-                      flex: 1,
-                    ),
-                    Icon(
-                      Icons.phone,
-                      size: 32,
-                      color: Color(0xFF222222),
-                    ),
-                    Spacer(
-                      flex: 1,
-                    ),
-                    Text(
-                      '(+20) 1011111111',
-                      style: TextStyle(
-                        fontSize: 28,
+                    Padding(
+                      padding: EdgeInsets.only(left: 16.0),
+                      child: Icon(
+                        Icons.phone,
+                        size: 32,
                         color: Color(0xFF222222),
                       ),
                     ),
-                    Spacer(
-                      flex: 2,
+                    Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 10.0),
+                      child: Text(
+                        '(+20) 1011111111',
+                        style: TextStyle(
+                          fontSize: 22,
+                          color: Color(0xFF222222),
+                        ),
+                      ),
                     ),
                   ],
                 ),
@@ -102,26 +100,23 @@ class BusinessCardApp extends StatelessWidget {
                 ),
                 child: const Row(
                   children: [
-                    Spacer(
-                      flex: 1,
-                    ),
-                    Icon(
-                      Icons.mail,
-                      size: 32,
-                      color: Color(0xFF222222),
-                    ),
-                    Spacer(
-                      flex: 1,
-                    ),
-                    Text(
-                      'osamalasheeno@gmail.com',
-                      style: TextStyle(
-                        fontSize: 28,
+                    Padding(
+                      padding: EdgeInsets.only(left: 16.0),
+                      child: Icon(
+                        Icons.mail,
+                        size: 32,
                         color: Color(0xFF222222),
                       ),
                     ),
-                    Spacer(
-                      flex: 2,
+                    Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 10.0),
+                      child: Text(
+                        'osamalasheeno@gmail.com',
+                        style: TextStyle(
+                          fontSize: 22,
+                          color: Color(0xFF222222),
+                        ),
+                      ),
                     ),
                   ],
                 ),
